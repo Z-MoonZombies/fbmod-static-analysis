@@ -1,6 +1,6 @@
 # FBMOD 静态分析与重建
 
-**状态：公开研究草稿，尚未创建正式版本 Release。** 本项目记录对一个 Rust 编译的 FBMOD 解包工具和两个 FBMOD 样本所做的只读静态分析，并提供可读的 Rust 风格重建代码。它不是原工具的源代码，也不是可替代原工具的完整程序。
+**状态：v0.1.0 研究稿 Release 已发布。** 本项目记录对一个 Rust 编译的 FBMOD 解包工具和两个 FBMOD 样本所做的只读静态分析，并提供可读的 Rust 风格重建代码。它不是原工具的源代码，也不是可替代原工具的完整程序。
 
 ## 范围
 
@@ -75,4 +75,4 @@ GitHub 对公开仓库适用的平台条款允许用户查看和 fork。若“�
 
 ## 发布状态
 
-当前仓库公开承载研究草稿，尚未创建 Git 标签或正式 Release。后续发布事项见 `RELEASE_CHECKLIST.md`，草稿说明见 `RELEASE_NOTES_v0.1.0-DRAFT.md`。
+当前仓库已发布 v0.1.0 标签与 GitHub Release；后续工作聚焦于已知分析限制。详见 `RELEASE_CHECKLIST.md` 和 `RELEASE_NOTES_v0.1.0-DRAFT.md`。
