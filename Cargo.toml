@@ -1,0 +1,12 @@
+[package]
+name = "fbmod-reconstruction"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "reconstructed_core.rs"
+
+[dependencies]
+flate2 = "=1.1.9"
+zstd-safe = "=7.2.4"

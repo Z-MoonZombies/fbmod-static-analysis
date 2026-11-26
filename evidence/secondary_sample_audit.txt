@@ -1,0 +1,39 @@
+Secondary FBMOD sample: 4.4.4.fbmod
+The input file is not included in this candidate package.
+
+FILE_IDENTITY
+  size=15095761 (0xE657D1)
+  sha256=E13F65B8EC36B1047B071AFA1F42931990D451C08F007C8D7A87FF17A4402188
+
+HEADER_AND_LAYOUT
+  magic=FROSTY\0\x01
+  version=5
+  data_offset=0x94AA
+  data_count=373
+  records_start=0x382
+  records_end=0x94AA (exactly data_offset)
+  manifest_payload_start=0xABFA
+  manifest_end=0xE657D1 (exactly file size; no trailing bytes)
+  resource_counts=embedded:5, ebx:360, res:4, chunk:4, bundle:0
+
+RES_AND_CHUNK_RECORDS
+  All four RES records have a 16-byte metadata tail and a 140-byte stored
+  manifest blob. Each record's logical size is 132 bytes; its single raw CAS
+  block declares 132 output bytes, and the record SHA-1 matches stored bytes.
+  All four Chunk records have the six-field, 24-byte type-specific tail.
+  Their logical sizes are 0x400000, 0x7820, 0xA90, and 0x4000. CAS framing
+  output-size sums match those values, and each record SHA-1 matches its
+  stored manifest bytes.
+
+CAS_FRAMING
+  EBX: 427 selector-0 blocks.
+  RES: 4 selector-0 blocks.
+  Chunk: 2 selector-0 blocks and 65 selector-9 blocks.
+  Combined: selector-0=433 blocks; selector-9=65 blocks; 498 total.
+  No malformed or truncated CAS record framing was observed. This is a
+  framing-level result: the selector-9 payloads have not yet been decoded by
+  the reconstructed Rust implementation. No selector-2 or selector-15 block
+  was found.
+
+This audit contains structural facts only. The FBMOD input and its descriptive
+metadata are not copied into the release candidate.

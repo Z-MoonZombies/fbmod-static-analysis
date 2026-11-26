@@ -1,0 +1,170 @@
+FILE fbmod-decompiler.exe
+SIZE 1464320
+SHA256 6CE6E746A55E7C43396D105AD5F454C9486CDFBBEBCDC3FD4581327838F747E3
+PE offset=0x100 machine=0x8664 sections=5 timestamp=0x69D6A840
+optional_magic=0x020B entry_rva=0x110640 imagebase=0x140000000 size_image=0x169000 headers=0x400 subsystem=3 characteristics=0x0022
+SECTION .text    RVA=0x00001000 VS=0x11A854 RAW=0x11AA00 FILE=0x400 FLAGS=0x60000020
+SECTION .rdata   RVA=0x0011C000 VS=0x40790 RAW=0x40800 FILE=0x11AE00 FLAGS=0x40000040
+SECTION .data    RVA=0x0015D000 VS=0xA78 RAW=0x400 FILE=0x15B600 FLAGS=0xC0000040
+SECTION .pdata   RVA=0x0015E000 VS=0x91BC RAW=0x9200 FILE=0x15BA00 FLAGS=0x40000040
+SECTION .reloc   RVA=0x00168000 VS=0xAA8 RAW=0xC00 FILE=0x164C00 FLAGS=0x42000040
+IMPORT_DIRECTORY RVA=0x15B9C4 SIZE=0x104
+IMPORT_DLLS kernel32.dll, api-ms-win-core-synch-l1-2-0.dll, bcryptprimitives.dll, KERNEL32.dll, ntdll.dll, VCRUNTIME140.dll, api-ms-win-crt-string-l1-1-0.dll, api-ms-win-crt-heap-l1-1-0.dll, api-ms-win-crt-stdio-l1-1-0.dll, api-ms-win-crt-runtime-l1-1-0.dll, api-ms-win-crt-math-l1-1-0.dll, api-ms-win-crt-locale-l1-1-0.dll
+ASCII_MARKERS
+  0x0011C674 Invalid magic: expected FROSTY header
+  0x0011C6DD Decompression error: 
+  0x0011C815 src\fbmod.rs
+  0x0011CA06 src\extract.rs
+  0x0011C871 resource_index
+  0x0011D56E original_size
+  0x0011D5CD logical_offset
+  0x0011C9E4 Warn: CAS decompress '
+  0x0011D9C2 zstd: 
+  0x0011D9DC zstd init: 
+  0x0011D9CB zlib: 
+  0x0011D9D4 lz4: 
+  0x0011D800 corrupt deflate stream
+FILE Anti Chomper V1.0.0.fbmod
+SIZE 1191072
+SHA256 BBCBE54F2C937C649E65DE06463C9CBBCC179A734C164FB4718659BB5B79DF9B
+MAGIC b'FROSTY\x00\x01'
+HEADER version=5 data_offset=0x884 data_count=21 profile_len=21 profile='GW2.Main_Win64_Retail' game_version=407422
+DETAILS title='Anti Chomper' author='Z-MoonZombies' category='Gameplay' mod_version='1.0.0' description='This mod will help you to fight against Chomper' link=''
+RESOURCE_COUNT 25 records_start=0x91 target_manifest=0x884
+RESOURCE_RECORDS_END 0x884 delta_to_manifest=0
+RESOURCE_TYPE_COUNTS embedded=5 ebx=20 res=0 chunk=0 bundle=0 total=25
+  [00] embedded @0x91..0xC1 idx=  0 name='Icon' sha1=0000000000000000000000000000000000000000 size=   37580 flags=0x00 handler=0x00000000 bundles=[]
+  [01] embedded @0xC1..0xD6 idx= -1 name='Screenshot0' sha1=- size=      -1 flags=0x00 handler=0x00000000 bundles=[]
+  [02] embedded @0xD6..0xEB idx= -1 name='Screenshot1' sha1=- size=      -1 flags=0x00 handler=0x00000000 bundles=[]
+  [03] embedded @0xEB..0x100 idx= -1 name='Screenshot2' sha1=- size=      -1 flags=0x00 handler=0x00000000 bundles=[]
+  [04] embedded @0x100..0x115 idx= -1 name='Screenshot3' sha1=- size=      -1 flags=0x00 handler=0x00000000 bundles=[]
+  [05] ebx      @0x115..0x166 idx=  1 name='gameplay/soldiers/human/mpzombie_swat' sha1=B7515653A0B4874C5CF52221E118CE91B0FB6732 size=   93904 flags=0x00 handler=0x00000000 bundles=[]
+  [06] ebx      @0x166..0x1B9 idx=  2 name='gameplay/soldiers/human/mpzombie_pirate' sha1=C7D64D7D946ED88831D49D5B92480F6CAA22DCC3 size=  103120 flags=0x00 handler=0x00000000 bundles=[]
+  [07] ebx      @0x1B9..0x20F idx=  3 name='gameplay/soldiers/human/mpzombie_scientist' sha1=F0D11C17762864A0FABC2952F9BA0509A2D3F2AF size=  100464 flags=0x00 handler=0x00000000 bundles=[]
+  [08] ebx      @0x20F..0x269 idx=  4 name='gameplay/soldiers/human/mpzombie_captainbrainz' sha1=D6A0EA484114BCDFA20F0341018C3E6CFA4DE533 size=  105072 flags=0x00 handler=0x00000000 bundles=[]
+  [09] ebx      @0x269..0x2B9 idx=  5 name='gameplay/soldiers/human/mpzombie_imp' sha1=B1841EFF13F9F1814C43BE47167B2ECBD1792C2D size=  126896 flags=0x00 handler=0x00000000 bundles=[]
+  [10] ebx      @0x2B9..0x30E idx=  6 name='gameplay/soldiers/human/mpzombie_engineer' sha1=2CF940E0AB30B81B05D2DDB48A10533740CCF541 size=   96304 flags=0x00 handler=0x00000000 bundles=[]
+  [11] ebx      @0x30E..0x362 idx=  7 name='gameplay/soldiers/human/mpzombie_allstar' sha1=033A32C9ADFC8CB8AEE17E6495AE5C36A87A7FDD size=   93328 flags=0x00 handler=0x00000000 bundles=[]
+  [12] ebx      @0x362..0x3B8 idx=  8 name='gameplay/soldiers/human/mpzombie_hovergoat' sha1=6C8DF223BF45C95027C6DA15B3A098D1DCA4C72D size=  100960 flags=0x00 handler=0x00000000 bundles=[]
+  [13] ebx      @0x3B8..0x42A idx=  9 name='gameplay/weapons/chomper/primary/darkunicornchomper/darkunicornchomper' sha1=65F8A7FBBBB9C688FC24AEA6B45F430469813B0E size=   26928 flags=0x00 handler=0x00000000 bundles=[]
+  [14] ebx      @0x42A..0x48C idx= 10 name='gameplay/weapons/chomper/primary/armorchomp/armorchomp' sha1=186050445B4BDC5B0F4662D2A8686B8E7B69994D size=   26976 flags=0x00 handler=0x00000000 bundles=[]
+  [15] ebx      @0x48C..0x4F6 idx= 11 name='gameplay/weapons/chomper/primary/bjomperchomper/bjomperchomper' sha1=87FB3737D0EEB70E20DB89DFF3B55E07873A9A59 size=   26912 flags=0x00 handler=0x00000000 bundles=[]
+  [16] ebx      @0x4F6..0x560 idx= 12 name='gameplay/weapons/chomper/primary/chomperswallow/chomperswallow' sha1=E63FCA804A6FBB86A51CABE7BCB30A7A9F43A642 size=   26176 flags=0x00 handler=0x00000000 bundles=[]
+  [17] ebx      @0x560..0x5C2 idx= 13 name='gameplay/weapons/chomper/primary/chompthing/chompthing' sha1=BD066FC42FCA2AEDC10AC1D7B5271D9FF85796CD size=   29968 flags=0x00 handler=0x00000000 bundles=[]
+  [18] ebx      @0x5C2..0x628 idx= 14 name='gameplay/weapons/chomper/primary/discochomper/discochomper' sha1=4B17AF72C670B22D70E6CA57A2811F9768202C74 size=   26528 flags=0x00 handler=0x00000000 bundles=[]
+  [19] ebx      @0x628..0x692 idx= 15 name='gameplay/weapons/chomper/primary/electricchomper/electricchomp' sha1=DCF2EA8BFE238D06D28FB4ABAB8259FDE9E723A9 size=   29760 flags=0x00 handler=0x00000000 bundles=[]
+  [20] ebx      @0x692..0x6F4 idx= 16 name='gameplay/weapons/chomper/primary/flamechomp/flamechomp' sha1=FD72B16531D4ECBAC01B22804A52533EFFBE5207 size=   29760 flags=0x00 handler=0x00000000 bundles=[]
+  [21] ebx      @0x6F4..0x758 idx= 17 name='gameplay/weapons/chomper/primary/frenzychomp/frenzychomp' sha1=07C21E2AB5390013A6CD4925C5688B9EE0A00821 size=   26496 flags=0x00 handler=0x00000000 bundles=[]
+  [22] ebx      @0x758..0x7BE idx= 18 name='gameplay/weapons/chomper/primary/stealthchomp/stealthchomp' sha1=53025E4A1F1FA7E18AF037E314091B6356847154 size=   27152 flags=0x00 handler=0x00000000 bundles=[]
+  [23] ebx      @0x7BE..0x820 idx= 19 name='gameplay/weapons/chomper/primary/toxicchomp/toxicchomp' sha1=18F988514319939AE5CDB9E8160C8263214D6062 size=   29360 flags=0x00 handler=0x00000000 bundles=[]
+  [24] ebx      @0x820..0x884 idx= 20 name='gameplay/weapons/chomper/primary/yetichomper/yetichomper' sha1=8A1D6055A199911351FD5EABC411E5C4993DB83A size=   24688 flags=0x00 handler=0x00000000 bundles=[]
+MANIFEST table=0x884 payload=0x9D4 file_size=0x122CA0
+  [00] rel=0x0 size=0x92CC abs=0x9D4..0x9CA0 sha256=DB11852617998807 sig=89 50 4E 47 0D 0A 1A 0A
+  [01] rel=0x92CC size=0x16EE0 abs=0x9CA0..0x20B80 sha256=F0C7D31AA34D4910 sig=00 01 00 00 00 71 00 00
+  [02] rel=0x201AC size=0x192E0 abs=0x20B80..0x39E60 sha256=B3DF237ECAD6FAAD sig=00 01 00 00 00 71 00 00
+  [03] rel=0x3948C size=0x18880 abs=0x39E60..0x526E0 sha256=7D5C7420E92A4261 sig=00 01 00 00 00 71 00 00
+  [04] rel=0x51D0C size=0x19A80 abs=0x526E0..0x6C160 sha256=262148FD454606CF sig=00 01 00 00 00 71 00 00
+  [05] rel=0x6B78C size=0x1EFC0 abs=0x6C160..0x8B120 sha256=6DD942C24B22934D sig=00 01 00 00 00 71 00 00
+  [06] rel=0x8A74C size=0x17840 abs=0x8B120..0xA2960 sha256=2CDA40E939192435 sig=00 01 00 00 00 71 00 00
+  [07] rel=0xA1F8C size=0x16CA0 abs=0xA2960..0xB9600 sha256=26C8493AFF4C7CA6 sig=00 01 00 00 00 71 00 00
+  [08] rel=0xB8C2C size=0x18A70 abs=0xB9600..0xD2070 sha256=8C9BBFEBEAB03B84 sig=00 01 00 00 00 71 00 00
+  [09] rel=0xD169C size=0x6938 abs=0xD2070..0xD89A8 sha256=6F7E91B523FD96DE sig=00 00 69 30 00 70 69 30
+  [10] rel=0xD7FD4 size=0x6968 abs=0xD89A8..0xDF310 sha256=5A65AD7351336420 sig=00 00 69 60 00 70 69 60
+  [11] rel=0xDE93C size=0x6928 abs=0xDF310..0xE5C38 sha256=C3D8545964357D43 sig=00 00 69 20 00 70 69 20
+  [12] rel=0xE5264 size=0x6648 abs=0xE5C38..0xEC280 sha256=36A171BA8362B716 sig=00 00 66 40 00 70 66 40
+  [13] rel=0xEB8AC size=0x7518 abs=0xEC280..0xF3798 sha256=E3145C264AB844E4 sig=00 00 75 10 00 70 75 10
+  [14] rel=0xF2DC4 size=0x67A8 abs=0xF3798..0xF9F40 sha256=7AA5043361DEDD7E sig=00 00 67 A0 00 70 67 A0
+  [15] rel=0xF956C size=0x7448 abs=0xF9F40..0x101388 sha256=30B615885BC6E9F3 sig=00 00 74 40 00 70 74 40
+  [16] rel=0x1009B4 size=0x7448 abs=0x101388..0x1087D0 sha256=7D0426CB82845354 sig=00 00 74 40 00 70 74 40
+  [17] rel=0x107DFC size=0x6788 abs=0x1087D0..0x10EF58 sha256=672EC6EB98F2B86C sig=00 00 67 80 00 70 67 80
+  [18] rel=0x10E584 size=0x6A18 abs=0x10EF58..0x115970 sha256=7DF6BC6D4E191C3F sig=00 00 6A 10 00 70 6A 10
+  [19] rel=0x114F9C size=0x72B8 abs=0x115970..0x11CC28 sha256=3C4DDCCD125C2033 sig=00 00 72 B0 00 70 72 B0
+  [20] rel=0x11C254 size=0x6078 abs=0x11CC28..0x122CA0 sha256=EE7C30B3DBACE5A3 sig=00 00 60 70 00 70 60 70
+MANIFEST_END 0x122CA0 trailing=0
+RESOURCE_MANIFEST_CORRELATION
+  [00] idx=00 stored=37580 declared_size=37580 sha1_match=False type=embedded
+  [05] idx=01 stored=93920 declared_size=93904 sha1_match=True CAS_blocks=2 total_uncompressed=93904 exact=True blocks=0x10000/codec=0/tag=0x0071/packed=0x10000/stored=0x10000,0x6ed0/codec=0/tag=0x0070/packed=0x6ed0/stored=0x6ed0
+  [06] idx=02 stored=103136 declared_size=103120 sha1_match=True CAS_blocks=2 total_uncompressed=103120 exact=True blocks=0x10000/codec=0/tag=0x0071/packed=0x10000/stored=0x10000,0x92d0/codec=0/tag=0x0070/packed=0x92d0/stored=0x92d0
+  [07] idx=03 stored=100480 declared_size=100464 sha1_match=True CAS_blocks=2 total_uncompressed=100464 exact=True blocks=0x10000/codec=0/tag=0x0071/packed=0x10000/stored=0x10000,0x8870/codec=0/tag=0x0070/packed=0x8870/stored=0x8870
+  [08] idx=04 stored=105088 declared_size=105072 sha1_match=True CAS_blocks=2 total_uncompressed=105072 exact=True blocks=0x10000/codec=0/tag=0x0071/packed=0x10000/stored=0x10000,0x9a70/codec=0/tag=0x0070/packed=0x9a70/stored=0x9a70
+  [09] idx=05 stored=126912 declared_size=126896 sha1_match=True CAS_blocks=2 total_uncompressed=126896 exact=True blocks=0x10000/codec=0/tag=0x0071/packed=0x10000/stored=0x10000,0xefb0/codec=0/tag=0x0070/packed=0xefb0/stored=0xefb0
+  [10] idx=06 stored=96320 declared_size=96304 sha1_match=True CAS_blocks=2 total_uncompressed=96304 exact=True blocks=0x10000/codec=0/tag=0x0071/packed=0x10000/stored=0x10000,0x7830/codec=0/tag=0x0070/packed=0x7830/stored=0x7830
+  [11] idx=07 stored=93344 declared_size=93328 sha1_match=True CAS_blocks=2 total_uncompressed=93328 exact=True blocks=0x10000/codec=0/tag=0x0071/packed=0x10000/stored=0x10000,0x6c90/codec=0/tag=0x0070/packed=0x6c90/stored=0x6c90
+  [12] idx=08 stored=100976 declared_size=100960 sha1_match=True CAS_blocks=2 total_uncompressed=100960 exact=True blocks=0x10000/codec=0/tag=0x0071/packed=0x10000/stored=0x10000,0x8a60/codec=0/tag=0x0070/packed=0x8a60/stored=0x8a60
+  [13] idx=09 stored=26936 declared_size=26928 sha1_match=True CAS_blocks=1 total_uncompressed=26928 exact=True blocks=0x6930/codec=0/tag=0x0070/packed=0x6930/stored=0x6930
+  [14] idx=10 stored=26984 declared_size=26976 sha1_match=True CAS_blocks=1 total_uncompressed=26976 exact=True blocks=0x6960/codec=0/tag=0x0070/packed=0x6960/stored=0x6960
+  [15] idx=11 stored=26920 declared_size=26912 sha1_match=True CAS_blocks=1 total_uncompressed=26912 exact=True blocks=0x6920/codec=0/tag=0x0070/packed=0x6920/stored=0x6920
+  [16] idx=12 stored=26184 declared_size=26176 sha1_match=True CAS_blocks=1 total_uncompressed=26176 exact=True blocks=0x6640/codec=0/tag=0x0070/packed=0x6640/stored=0x6640
+  [17] idx=13 stored=29976 declared_size=29968 sha1_match=True CAS_blocks=1 total_uncompressed=29968 exact=True blocks=0x7510/codec=0/tag=0x0070/packed=0x7510/stored=0x7510
+  [18] idx=14 stored=26536 declared_size=26528 sha1_match=True CAS_blocks=1 total_uncompressed=26528 exact=True blocks=0x67a0/codec=0/tag=0x0070/packed=0x67a0/stored=0x67a0
+  [19] idx=15 stored=29768 declared_size=29760 sha1_match=True CAS_blocks=1 total_uncompressed=29760 exact=True blocks=0x7440/codec=0/tag=0x0070/packed=0x7440/stored=0x7440
+  [20] idx=16 stored=29768 declared_size=29760 sha1_match=True CAS_blocks=1 total_uncompressed=29760 exact=True blocks=0x7440/codec=0/tag=0x0070/packed=0x7440/stored=0x7440
+  [21] idx=17 stored=26504 declared_size=26496 sha1_match=True CAS_blocks=1 total_uncompressed=26496 exact=True blocks=0x6780/codec=0/tag=0x0070/packed=0x6780/stored=0x6780
+  [22] idx=18 stored=27160 declared_size=27152 sha1_match=True CAS_blocks=1 total_uncompressed=27152 exact=True blocks=0x6a10/codec=0/tag=0x0070/packed=0x6a10/stored=0x6a10
+  [23] idx=19 stored=29368 declared_size=29360 sha1_match=True CAS_blocks=1 total_uncompressed=29360 exact=True blocks=0x72b0/codec=0/tag=0x0070/packed=0x72b0/stored=0x72b0
+  [24] idx=20 stored=24696 declared_size=24688 sha1_match=True CAS_blocks=1 total_uncompressed=24688 exact=True blocks=0x6070/codec=0/tag=0x0070/packed=0x6070/stored=0x6070
+HEX 0x0000..0x0100
+  00000000  46 52 4F 53 54 59 00 01 05 00 00 00 84 08 00 00  FROSTY..........
+  00000010  00 00 00 00 15 00 00 00 15 47 57 32 2E 4D 61 69  .........GW2.Mai
+  00000020  6E 5F 57 69 6E 36 34 5F 52 65 74 61 69 6C 7E 37  n_Win64_Retail~7
+  00000030  06 00 41 6E 74 69 20 43 68 6F 6D 70 65 72 00 5A  ..Anti Chomper.Z
+  00000040  2D 4D 6F 6F 6E 5A 6F 6D 62 69 65 73 00 47 61 6D  -MoonZombies.Gam
+  00000050  65 70 6C 61 79 00 31 2E 30 2E 30 00 54 68 69 73  eplay.1.0.0.This
+  00000060  20 6D 6F 64 20 77 69 6C 6C 20 68 65 6C 70 20 79   mod will help y
+  00000070  6F 75 20 74 6F 20 66 69 67 68 74 20 61 67 61 69  ou to fight agai
+  00000080  6E 73 74 20 43 68 6F 6D 70 65 72 00 00 19 00 00  nst Chomper.....
+  00000090  00 00 00 00 00 00 49 63 6F 6E 00 00 00 00 00 00  ......Icon......
+  000000A0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 CC  ................
+  000000B0  92 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+  000000C0  00 00 FF FF FF FF 53 63 72 65 65 6E 73 68 6F 74  ......Screenshot
+  000000D0  30 00 00 00 00 00 00 FF FF FF FF 53 63 72 65 65  0..........Scree
+  000000E0  6E 73 68 6F 74 31 00 00 00 00 00 00 FF FF FF FF  nshot1..........
+  000000F0  53 63 72 65 65 6E 73 68 6F 74 32 00 00 00 00 00  Screenshot2.....
+HEX 0x0820..0x0920
+  00000820  01 14 00 00 00 67 61 6D 65 70 6C 61 79 2F 77 65  .....gameplay/we
+  00000830  61 70 6F 6E 73 2F 63 68 6F 6D 70 65 72 2F 70 72  apons/chomper/pr
+  00000840  69 6D 61 72 79 2F 79 65 74 69 63 68 6F 6D 70 65  imary/yetichompe
+  00000850  72 2F 79 65 74 69 63 68 6F 6D 70 65 72 00 8A 1D  r/yetichomper...
+  00000860  60 55 A1 99 91 13 51 FD 5E AB C4 11 E5 C4 99 3D  `U....Q.^......=
+  00000870  B8 3A 70 60 00 00 00 00 00 00 00 00 00 00 00 00  .:p`............
+  00000880  00 00 00 00 00 00 00 00 00 00 00 00 CC 92 00 00  ................
+  00000890  00 00 00 00 CC 92 00 00 00 00 00 00 E0 6E 01 00  .............n..
+  000008A0  00 00 00 00 AC 01 02 00 00 00 00 00 E0 92 01 00  ................
+  000008B0  00 00 00 00 8C 94 03 00 00 00 00 00 80 88 01 00  ................
+  000008C0  00 00 00 00 0C 1D 05 00 00 00 00 00 80 9A 01 00  ................
+  000008D0  00 00 00 00 8C B7 06 00 00 00 00 00 C0 EF 01 00  ................
+  000008E0  00 00 00 00 4C A7 08 00 00 00 00 00 40 78 01 00  ....L.......@x..
+  000008F0  00 00 00 00 8C 1F 0A 00 00 00 00 00 A0 6C 01 00  .............l..
+  00000900  00 00 00 00 2C 8C 0B 00 00 00 00 00 70 8A 01 00  ....,.......p...
+  00000910  00 00 00 00 9C 16 0D 00 00 00 00 00 38 69 00 00  ............8i..
+PRINTABLE_STRINGS_BEFORE_MANIFEST
+  0x00000019 GW2.Main_Win64_Retail~7
+  0x00000032 Anti Chomper
+  0x0000003F Z-MoonZombies
+  0x0000004D Gameplay
+  0x0000005C This mod will help you to fight against Chomper
+  0x000000C6 Screenshot0
+  0x000000DB Screenshot1
+  0x000000F0 Screenshot2
+  0x00000105 Screenshot3
+  0x0000011A gameplay/soldiers/human/mpzombie_swat
+  0x0000016B gameplay/soldiers/human/mpzombie_pirate
+  0x000001BE gameplay/soldiers/human/mpzombie_scientist
+  0x00000214 gameplay/soldiers/human/mpzombie_captainbrainz
+  0x0000026E gameplay/soldiers/human/mpzombie_imp
+  0x000002BE gameplay/soldiers/human/mpzombie_engineer
+  0x00000313 gameplay/soldiers/human/mpzombie_allstar
+  0x00000367 gameplay/soldiers/human/mpzombie_hovergoat
+  0x000003BD gameplay/weapons/chomper/primary/darkunicornchomper/darkunicornchomper
+  0x0000042F gameplay/weapons/chomper/primary/armorchomp/armorchomp
+  0x00000491 gameplay/weapons/chomper/primary/bjomperchomper/bjomperchomper
+  0x000004FB gameplay/weapons/chomper/primary/chomperswallow/chomperswallow
+  0x00000565 gameplay/weapons/chomper/primary/chompthing/chompthing
+  0x000005C7 gameplay/weapons/chomper/primary/discochomper/discochomper
+  0x0000062D gameplay/weapons/chomper/primary/electricchomper/electricchomp
+  0x00000697 gameplay/weapons/chomper/primary/flamechomp/flamechomp
+  0x000006F9 gameplay/weapons/chomper/primary/frenzychomp/frenzychomp
+  0x0000075D gameplay/weapons/chomper/primary/stealthchomp/stealthchomp
+  0x000007C3 gameplay/weapons/chomper/primary/toxicchomp/toxicchomp
+  0x00000825 gameplay/weapons/chomper/primary/yetichomper/yetichomper
+

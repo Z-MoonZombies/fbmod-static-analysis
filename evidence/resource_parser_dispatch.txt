@@ -1,0 +1,443 @@
+  000000014001FC30: 48 01 C8           add         rax,rcx
+  000000014001FC33: FF E0              jmp         rax
+  000000014001FC35: 48 8D 4D 70        lea         rcx,[rbp+70h]
+  000000014001FC39: 48 89 FA           mov         rdx,rdi
+  000000014001FC3C: 45 89 E0           mov         r8d,r12d
+  000000014001FC3F: E8 8C 16 00 00     call        00000001400212D0
+  000000014001FC44: 48 8D 55 78        lea         rdx,[rbp+78h]
+  000000014001FC48: 48 8B 45 70        mov         rax,qword ptr [rbp+70h]
+  000000014001FC4C: 0F 10 02           movups      xmm0,xmmword ptr [rdx]
+  000000014001FC4F: 0F 10 4A 10        movups      xmm1,xmmword ptr [rdx+10h]
+  000000014001FC53: 0F 29 85 10 01 00  movaps      xmmword ptr [rbp+0000000000000110h],xmm0
+  000000014001FC5A: 0F 29 8D 20 01 00  movaps      xmmword ptr [rbp+0000000000000120h],xmm1
+  000000014001FC61: 48 83 F8 02        cmp         rax,2
+  000000014001FC65: 0F 84 1D 08 00 00  je          0000000140020488
+  000000014001FC6B: 48 89 B5 E8 01 00  mov         qword ptr [rbp+00000000000001E8h],rsi
+  000000014001FC72: 48 8B 4A 70        mov         rcx,qword ptr [rdx+70h]
+  000000014001FC76: 4C 8D 45 D0        lea         r8,[rbp-30h]
+  000000014001FC7A: 49 89 48 70        mov         qword ptr [r8+70h],rcx
+  000000014001FC7E: 0F 10 42 60        movups      xmm0,xmmword ptr [rdx+60h]
+  000000014001FC82: 41 0F 11 40 60     movups      xmmword ptr [r8+60h],xmm0
+  000000014001FC87: 0F 10 42 20        movups      xmm0,xmmword ptr [rdx+20h]
+  000000014001FC8B: 0F 10 4A 30        movups      xmm1,xmmword ptr [rdx+30h]
+  000000014001FC8F: 0F 10 52 40        movups      xmm2,xmmword ptr [rdx+40h]
+  000000014001FC93: 0F 10 5A 50        movups      xmm3,xmmword ptr [rdx+50h]
+  000000014001FC97: 41 0F 11 58 50     movups      xmmword ptr [r8+50h],xmm3
+  000000014001FC9C: 41 0F 11 50 40     movups      xmmword ptr [r8+40h],xmm2
+  000000014001FCA1: 41 0F 11 48 30     movups      xmmword ptr [r8+30h],xmm1
+  000000014001FCA6: 41 0F 11 40 20     movups      xmmword ptr [r8+20h],xmm0
+  000000014001FCAB: 0F 28 85 10 01 00  movaps      xmm0,xmmword ptr [rbp+0000000000000110h]
+  000000014001FCB2: 0F 28 8D 20 01 00  movaps      xmm1,xmmword ptr [rbp+0000000000000120h]
+  000000014001FCB9: 41 0F 11 48 10     movups      xmmword ptr [r8+10h],xmm1
+  000000014001FCBE: 41 0F 11 00        movups      xmmword ptr [r8],xmm0
+  000000014001FCC2: 48 89 45 C8        mov         qword ptr [rbp-38h],rax
+  000000014001FCC6: 48 C7 45 C0 02 00  mov         qword ptr [rbp-40h],2
+  000000014001FCCE: 4C 8B AD B0 01 00  mov         r13,qword ptr [rbp+00000000000001B0h]
+  000000014001FCD5: 4C 3B AD A0 01 00  cmp         r13,qword ptr [rbp+00000000000001A0h]
+  000000014001FCDC: 0F 85 DE FE FF FF  jne         000000014001FBC0
+  000000014001FCE2: E9 75 06 00 00     jmp         000000014002035C
+  000000014001FCE7: 48 8D 4D 70        lea         rcx,[rbp+70h]
+  000000014001FCEB: 48 89 FA           mov         rdx,rdi
+  000000014001FCEE: 45 89 E0           mov         r8d,r12d
+  000000014001FCF1: E8 DA 15 00 00     call        00000001400212D0
+  000000014001FCF6: 48 8D 55 78        lea         rdx,[rbp+78h]
+  000000014001FCFA: 48 8B 45 70        mov         rax,qword ptr [rbp+70h]
+  000000014001FCFE: 0F 10 02           movups      xmm0,xmmword ptr [rdx]
+  000000014001FD01: 0F 10 4A 10        movups      xmm1,xmmword ptr [rdx+10h]
+  000000014001FD05: 0F 29 85 F0 00 00  movaps      xmmword ptr [rbp+00000000000000F0h],xmm0
+  000000014001FD0C: 0F 29 8D 00 01 00  movaps      xmmword ptr [rbp+0000000000000100h],xmm1
+  000000014001FD13: 48 83 F8 02        cmp         rax,2
+  000000014001FD17: 0F 84 7B 07 00 00  je          0000000140020498
+  000000014001FD1D: 48 8B 4A 70        mov         rcx,qword ptr [rdx+70h]
+  000000014001FD21: 4C 8D 85 18 01 00  lea         r8,[rbp+0000000000000118h]
+  000000014001FD28: 49 89 48 70        mov         qword ptr [r8+70h],rcx
+  000000014001FD2C: 0F 10 42 60        movups      xmm0,xmmword ptr [rdx+60h]
+  000000014001FD30: 41 0F 11 40 60     movups      xmmword ptr [r8+60h],xmm0
+  000000014001FD35: 0F 10 42 20        movups      xmm0,xmmword ptr [rdx+20h]
+  000000014001FD39: 0F 10 4A 30        movups      xmm1,xmmword ptr [rdx+30h]
+  000000014001FD3D: 0F 10 52 40        movups      xmm2,xmmword ptr [rdx+40h]
+  000000014001FD41: 0F 10 5A 50        movups      xmm3,xmmword ptr [rdx+50h]
+  000000014001FD45: 41 0F 11 58 50     movups      xmmword ptr [r8+50h],xmm3
+  000000014001FD4A: 41 0F 11 50 40     movups      xmmword ptr [r8+40h],xmm2
+  000000014001FD4F: 41 0F 11 48 30     movups      xmmword ptr [r8+30h],xmm1
+  000000014001FD54: 41 0F 11 40 20     movups      xmmword ptr [r8+20h],xmm0
+  000000014001FD59: 0F 28 85 F0 00 00  movaps      xmm0,xmmword ptr [rbp+00000000000000F0h]
+  000000014001FD60: 0F 28 8D 00 01 00  movaps      xmm1,xmmword ptr [rbp+0000000000000100h]
+  000000014001FD67: 41 0F 11 48 10     movups      xmmword ptr [r8+10h],xmm1
+  000000014001FD6C: 41 0F 11 00        movups      xmmword ptr [r8],xmm0
+  000000014001FD70: 48 89 85 10 01 00  mov         qword ptr [rbp+0000000000000110h],rax
+  000000014001FD77: 48 8D 4D 70        lea         rcx,[rbp+70h]
+  000000014001FD7B: 48 89 FA           mov         rdx,rdi
+  000000014001FD7E: E8 0D C4 FF FF     call        000000014001C190
+  000000014001FD83: 0F B6 45 70        movzx       eax,byte ptr [rbp+70h]
+  000000014001FD87: 3C 07              cmp         al,7
+  000000014001FD89: 0F 85 AE 07 00 00  jne         000000014002053D
+  000000014001FD8F: 48 8B 55 78        mov         rdx,qword ptr [rbp+78h]
+  000000014001FD93: 4C 8B 47 10        mov         r8,qword ptr [rdi+10h]
+  000000014001FD97: 48 8B 47 18        mov         rax,qword ptr [rdi+18h]
+  000000014001FD9B: 49 39 C0           cmp         r8,rax
+  000000014001FD9E: 49 89 C1           mov         r9,rax
+  000000014001FDA1: 4D 0F 42 C8        cmovb       r9,r8
+  000000014001FDA5: 48 8B 8D 80 00 00  mov         rcx,qword ptr [rbp+0000000000000080h]
+  000000014001FDAC: 4D 89 C2           mov         r10,r8
+  000000014001FDAF: 4D 29 CA           sub         r10,r9
+  000000014001FDB2: 49 83 FA 03        cmp         r10,3
+  000000014001FDB6: 0F 86 F5 07 00 00  jbe         00000001400205B1
+  000000014001FDBC: 4C 8B 85 88 00 00  mov         r8,qword ptr [rbp+0000000000000088h]
+  000000014001FDC3: 4C 8B 57 08        mov         r10,qword ptr [rdi+8]
+  000000014001FDC7: 47 8B 0C 0A        mov         r9d,dword ptr [r10+r9]
+  000000014001FDCB: 48 83 C0 04        add         rax,4
+  000000014001FDCF: 48 89 47 18        mov         qword ptr [rdi+18h],rax
+  000000014001FDD3: 48 89 55 C8        mov         qword ptr [rbp-38h],rdx
+  000000014001FDD7: 48 89 4D D0        mov         qword ptr [rbp-30h],rcx
+  000000014001FDDB: 4C 89 45 D8        mov         qword ptr [rbp-28h],r8
+  000000014001FDDF: 44 89 8D 94 01 00  mov         dword ptr [rbp+0000000000000194h],r9d
+  000000014001FDE6: 44 89 4D E0        mov         dword ptr [rbp-20h],r9d
+  000000014001FDEA: 48 C7 45 C0 06 00  mov         qword ptr [rbp-40h],6
+  000000014001FDF2: 48 8B 95 20 01 00  mov         rdx,qword ptr [rbp+0000000000000120h]
+  000000014001FDF9: 48 85 D2           test        rdx,rdx
+  000000014001FDFC: 74 12              je          000000014001FE10
+  000000014001FDFE: 48 8B 8D 28 01 00  mov         rcx,qword ptr [rbp+0000000000000128h]
+  000000014001FE05: 41 B8 01 00 00 00  mov         r8d,1
+  000000014001FE0B: E8 B0 C9 FE FF     call        000000014000C7C0
+  000000014001FE10: 48 8B 95 50 01 00  mov         rdx,qword ptr [rbp+0000000000000150h]
+  000000014001FE17: 48 89 D0           mov         rax,rdx
+  000000014001FE1A: 48 F7 D8           neg         rax
+  000000014001FE1D: 70 14              jo          000000014001FE33
+  000000014001FE1F: 73 12              jae         000000014001FE33
+  000000014001FE21: 48 8B 8D 58 01 00  mov         rcx,qword ptr [rbp+0000000000000158h]
+  000000014001FE28: 41 B8 01 00 00 00  mov         r8d,1
+  000000014001FE2E: E8 8D C9 FE FF     call        000000014000C7C0
+  000000014001FE33: 48 89 B5 E8 01 00  mov         qword ptr [rbp+00000000000001E8h],rsi
+  000000014001FE3A: 48 8B 95 68 01 00  mov         rdx,qword ptr [rbp+0000000000000168h]
+  000000014001FE41: 48 89 D0           mov         rax,rdx
+  000000014001FE44: 48 F7 D8           neg         rax
+  000000014001FE47: 70 14              jo          000000014001FE5D
+  000000014001FE49: 73 12              jae         000000014001FE5D
+  000000014001FE4B: 48 8B 8D 70 01 00  mov         rcx,qword ptr [rbp+0000000000000170h]
+  000000014001FE52: 41 B8 01 00 00 00  mov         r8d,1
+  000000014001FE58: E8 63 C9 FE FF     call        000000014000C7C0
+  000000014001FE5D: 48 8B 95 38 01 00  mov         rdx,qword ptr [rbp+0000000000000138h]
+  000000014001FE64: 48 85 D2           test        rdx,rdx
+  000000014001FE67: 0F 84 DB 04 00 00  je          0000000140020348
+  000000014001FE6D: 48 8B 8D 40 01 00  mov         rcx,qword ptr [rbp+0000000000000140h]
+  000000014001FE74: 48 C1 E2 02        shl         rdx,2
+  000000014001FE78: 41 B8 04 00 00 00  mov         r8d,4
+  000000014001FE7E: E8 3D C9 FE FF     call        000000014000C7C0
+  000000014001FE83: 4C 8B AD B0 01 00  mov         r13,qword ptr [rbp+00000000000001B0h]
+  000000014001FE8A: 4C 3B AD A0 01 00  cmp         r13,qword ptr [rbp+00000000000001A0h]
+  000000014001FE91: 0F 85 29 FD FF FF  jne         000000014001FBC0
+  000000014001FE97: E9 C0 04 00 00     jmp         000000014002035C
+  000000014001FE9C: 48 8D 4D 70        lea         rcx,[rbp+70h]
+  000000014001FEA0: 48 89 FA           mov         rdx,rdi
+  000000014001FEA3: 45 89 E0           mov         r8d,r12d
+  000000014001FEA6: E8 25 14 00 00     call        00000001400212D0
+  000000014001FEAB: 48 8D 55 78        lea         rdx,[rbp+78h]
+  000000014001FEAF: 48 8B 45 70        mov         rax,qword ptr [rbp+70h]
+  000000014001FEB3: 0F 10 02           movups      xmm0,xmmword ptr [rdx]
+  000000014001FEB6: 0F 10 4A 10        movups      xmm1,xmmword ptr [rdx+10h]
+  000000014001FEBA: 0F 29 85 F0 00 00  movaps      xmmword ptr [rbp+00000000000000F0h],xmm0
+  000000014001FEC1: 0F 29 8D 00 01 00  movaps      xmmword ptr [rbp+0000000000000100h],xmm1
+  000000014001FEC8: 48 83 F8 02        cmp         rax,2
+  000000014001FECC: 0F 84 C6 05 00 00  je          0000000140020498
+  000000014001FED2: 49 89 D8           mov         r8,rbx
+  000000014001FED5: 4C 89 B5 F8 01 00  mov         qword ptr [rbp+00000000000001F8h],r14
+  000000014001FEDC: 48 8B 4A 70        mov         rcx,qword ptr [rdx+70h]
+  000000014001FEE0: 4C 8D 8D 18 01 00  lea         r9,[rbp+0000000000000118h]
+  000000014001FEE7: 49 89 49 70        mov         qword ptr [r9+70h],rcx
+  000000014001FEEB: 0F 10 42 60        movups      xmm0,xmmword ptr [rdx+60h]
+  000000014001FEEF: 41 0F 11 41 60     movups      xmmword ptr [r9+60h],xmm0
+  000000014001FEF4: 0F 10 42 20        movups      xmm0,xmmword ptr [rdx+20h]
+  000000014001FEF8: 0F 10 4A 30        movups      xmm1,xmmword ptr [rdx+30h]
+  000000014001FEFC: 0F 10 52 40        movups      xmm2,xmmword ptr [rdx+40h]
+  000000014001FF00: 0F 10 5A 50        movups      xmm3,xmmword ptr [rdx+50h]
+  000000014001FF04: 41 0F 11 59 50     movups      xmmword ptr [r9+50h],xmm3
+  000000014001FF09: 41 0F 11 51 40     movups      xmmword ptr [r9+40h],xmm2
+  000000014001FF0E: 41 0F 11 49 30     movups      xmmword ptr [r9+30h],xmm1
+  000000014001FF13: 41 0F 11 41 20     movups      xmmword ptr [r9+20h],xmm0
+  000000014001FF18: 0F 28 85 F0 00 00  movaps      xmm0,xmmword ptr [rbp+00000000000000F0h]
+  000000014001FF1F: 0F 28 8D 00 01 00  movaps      xmm1,xmmword ptr [rbp+0000000000000100h]
+  000000014001FF26: 41 0F 11 49 10     movups      xmmword ptr [r9+10h],xmm1
+  000000014001FF2B: 41 0F 11 01        movups      xmmword ptr [r9],xmm0
+  000000014001FF2F: 48 8B 5F 10        mov         rbx,qword ptr [rdi+10h]
+  000000014001FF33: 4C 8B 77 18        mov         r14,qword ptr [rdi+18h]
+  000000014001FF37: 4C 39 F3           cmp         rbx,r14
+  000000014001FF3A: 4C 89 F1           mov         rcx,r14
+  000000014001FF3D: 48 0F 42 CB        cmovb       rcx,rbx
+  000000014001FF41: 48 89 85 10 01 00  mov         qword ptr [rbp+0000000000000110h],rax
+  000000014001FF48: 48 89 D8           mov         rax,rbx
+  000000014001FF4B: 48 29 C8           sub         rax,rcx
+  000000014001FF4E: 48 83 F8 04        cmp         rax,4
+  000000014001FF52: 0F 82 BE 05 00 00  jb          0000000140020516
+  000000014001FF58: 48 8B 57 08        mov         rdx,qword ptr [rdi+8]
+  000000014001FF5C: 8B 04 0A           mov         eax,dword ptr [rdx+rcx]
+  000000014001FF5F: 89 85 CC 01 00 00  mov         dword ptr [rbp+00000000000001CCh],eax
+  000000014001FF65: 49 8D 46 04        lea         rax,[r14+4]
+  000000014001FF69: 48 89 47 18        mov         qword ptr [rdi+18h],rax
+  000000014001FF6D: 48 39 C3           cmp         rbx,rax
+  000000014001FF70: 48 0F 42 C3        cmovb       rax,rbx
+  000000014001FF74: 48 89 D9           mov         rcx,rbx
+  000000014001FF77: 48 29 C1           sub         rcx,rax
+  000000014001FF7A: 48 83 F9 07        cmp         rcx,7
+  000000014001FF7E: 0F 86 0F 06 00 00  jbe         0000000140020593
+  000000014001FF84: 4C 8B 0C 02        mov         r9,qword ptr [rdx+rax]
+  000000014001FF88: 49 8D 46 0C        lea         rax,[r14+0Ch]
+  000000014001FF8C: 48 89 47 18        mov         qword ptr [rdi+18h],rax
+  000000014001FF90: 48 39 C3           cmp         rbx,rax
+  000000014001FF93: 48 0F 42 C3        cmovb       rax,rbx
+  000000014001FF97: 48 89 D9           mov         rcx,rbx
+  000000014001FF9A: 48 29 C1           sub         rcx,rax
+  000000014001FF9D: 48 83 F9 03        cmp         rcx,3
+  000000014001FFA1: 0F 86 69 06 00 00  jbe         0000000140020610
+  000000014001FFA7: 4C 63 2C 02        movsxd      r13,dword ptr [rdx+rax]
+  000000014001FFAB: 49 83 C6 10        add         r14,10h
+  000000014001FFAF: 4C 89 77 18        mov         qword ptr [rdi+18h],r14
+  000000014001FFB3: 4D 85 ED           test        r13,r13
+  000000014001FFB6: 0F 88 75 04 00 00  js          0000000140020431
+  000000014001FFBC: 4C 89 8D 00 02 00  mov         qword ptr [rbp+0000000000000200h],r9
+  000000014001FFC3: 48 89 B5 E8 01 00  mov         qword ptr [rbp+00000000000001E8h],rsi
+  000000014001FFCA: 45 85 ED           test        r13d,r13d
+  000000014001FFCD: 0F 84 9A 03 00 00  je          000000014002036D
+  000000014001FFD3: 44 89 A5 F0 01 00  mov         dword ptr [rbp+00000000000001F0h],r12d
+  000000014001FFDA: E8 91 35 FE FF     call        0000000140003570
+  000000014001FFDF: 41 BC 01 00 00 00  mov         r12d,1
+  000000014001FFE5: BA 01 00 00 00     mov         edx,1
+  000000014001FFEA: 4C 89 E9           mov         rcx,r13
+  000000014001FFED: E8 EE C7 FE FF     call        000000014000C7E0
+  000000014001FFF2: 48 85 C0           test        rax,rax
+  000000014001FFF5: 0F 84 39 04 00 00  je          0000000140020434
+  000000014001FFFB: 48 89 C6           mov         rsi,rax
+  000000014001FFFE: 4C 39 F3           cmp         rbx,r14
+  0000000140020001: 4C 89 F2           mov         rdx,r14
+  0000000140020004: 48 0F 42 D3        cmovb       rdx,rbx
+  0000000140020008: 48 89 D8           mov         rax,rbx
+  000000014002000B: 48 29 D0           sub         rax,rdx
+  000000014002000E: 4C 39 E8           cmp         rax,r13
+  0000000140020011: 44 8B A5 F0 01 00  mov         r12d,dword ptr [rbp+00000000000001F0h]
+  0000000140020018: 0F 82 D8 07 00 00  jb          00000001400207F6
+  000000014002001E: 48 03 57 08        add         rdx,qword ptr [rdi+8]
+  0000000140020022: 41 83 FD 01        cmp         r13d,1
+  0000000140020026: 4C 89 EB           mov         rbx,r13
+  0000000140020029: 0F 85 50 03 00 00  jne         000000014002037F
+  000000014002002F: 0F B6 02           movzx       eax,byte ptr [rdx]
+  0000000140020032: 88 06              mov         byte ptr [rsi],al
+  0000000140020034: E9 51 03 00 00     jmp         000000014002038A
+  0000000140020039: 48 8D 4D 70        lea         rcx,[rbp+70h]
+  000000014002003D: 48 89 FA           mov         rdx,rdi
+  0000000140020040: 45 89 E0           mov         r8d,r12d
+  0000000140020043: E8 88 12 00 00     call        00000001400212D0
+  0000000140020048: 4C 8D 4D 78        lea         r9,[rbp+78h]
+  000000014002004C: 4C 8B 45 70        mov         r8,qword ptr [rbp+70h]
+  0000000140020050: 48 8B 45 78        mov         rax,qword ptr [rbp+78h]
+  0000000140020054: 49 83 F8 02        cmp         r8,2
+  0000000140020058: 0F 84 6E 04 00 00  je          00000001400204CC
+  000000014002005E: 48 89 5D A8        mov         qword ptr [rbp-58h],rbx
+  0000000140020062: 48 8B 8D 80 00 00  mov         rcx,qword ptr [rbp+0000000000000080h]
+  0000000140020069: 48 8B 95 88 00 00  mov         rdx,qword ptr [rbp+0000000000000088h]
+  0000000140020070: 48 89 95 F8 01 00  mov         qword ptr [rbp+00000000000001F8h],rdx
+  0000000140020077: 48 8B 95 98 00 00  mov         rdx,qword ptr [rbp+0000000000000098h]
+  000000014002007E: 48 89 95 D0 01 00  mov         qword ptr [rbp+00000000000001D0h],rdx
+  0000000140020085: 0F 10 85 90 00 00  movups      xmm0,xmmword ptr [rbp+0000000000000090h]
+  000000014002008C: 4C 8B AD A0 00 00  mov         r13,qword ptr [rbp+00000000000000A0h]
+  0000000140020093: 48 8B 95 B0 00 00  mov         rdx,qword ptr [rbp+00000000000000B0h]
+  000000014002009A: 48 89 95 E0 01 00  mov         qword ptr [rbp+00000000000001E0h],rdx
+  00000001400200A1: 0F 10 8D A8 00 00  movups      xmm1,xmmword ptr [rbp+00000000000000A8h]
+  00000001400200A8: 48 8B 95 B8 00 00  mov         rdx,qword ptr [rbp+00000000000000B8h]
+  00000001400200AF: 48 89 95 F0 01 00  mov         qword ptr [rbp+00000000000001F0h],rdx
+  00000001400200B6: 48 8B 95 C8 00 00  mov         rdx,qword ptr [rbp+00000000000000C8h]
+  00000001400200BD: 48 89 95 D8 01 00  mov         qword ptr [rbp+00000000000001D8h],rdx
+  00000001400200C4: 0F 10 95 C0 00 00  movups      xmm2,xmmword ptr [rbp+00000000000000C0h]
+  00000001400200CB: 48 8B 95 D0 00 00  mov         rdx,qword ptr [rbp+00000000000000D0h]
+  00000001400200D2: 48 89 95 00 02 00  mov         qword ptr [rbp+0000000000000200h],rdx
+  00000001400200D9: 41 0F 10 59 60     movups      xmm3,xmmword ptr [r9+60h]
+  00000001400200DE: 0F 29 9D 10 01 00  movaps      xmmword ptr [rbp+0000000000000110h],xmm3
+  00000001400200E5: 4D 8B 59 70        mov         r11,qword ptr [r9+70h]
+  00000001400200E9: 4C 8B 4F 10        mov         r9,qword ptr [rdi+10h]
+  00000001400200ED: 4C 8B 57 18        mov         r10,qword ptr [rdi+18h]
+  00000001400200F1: 4D 39 D1           cmp         r9,r10
+  00000001400200F4: 4C 89 D3           mov         rbx,r10
+  00000001400200F7: 49 0F 42 D9        cmovb       rbx,r9
+  00000001400200FB: 4C 89 9D 20 01 00  mov         qword ptr [rbp+0000000000000120h],r11
+  0000000140020102: 4D 89 CB           mov         r11,r9
+  0000000140020105: 49 29 DB           sub         r11,rbx
+  0000000140020108: 49 83 FB 03        cmp         r11,3
+  000000014002010C: 0F 86 DF 03 00 00  jbe         00000001400204F1
+  0000000140020112: 48 89 B5 E8 01 00  mov         qword ptr [rbp+00000000000001E8h],rsi
+  0000000140020119: 4C 89 F2           mov         rdx,r14
+  000000014002011C: 4C 8B 5F 08        mov         r11,qword ptr [rdi+8]
+  0000000140020120: 41 8B 1C 1B        mov         ebx,dword ptr [r11+rbx]
+  0000000140020124: 89 9D BC 01 00 00  mov         dword ptr [rbp+00000000000001BCh],ebx
+  000000014002012A: 49 8D 5A 04        lea         rbx,[r10+4]
+  000000014002012E: 48 89 5F 18        mov         qword ptr [rdi+18h],rbx
+  0000000140020132: 49 39 D9           cmp         r9,rbx
+  0000000140020135: 49 0F 42 D9        cmovb       rbx,r9
+  0000000140020139: 4D 89 CE           mov         r14,r9
+  000000014002013C: 49 29 DE           sub         r14,rbx
+  000000014002013F: 49 83 FE 03        cmp         r14,3
+  0000000140020143: 0F 86 25 04 00 00  jbe         000000014002056E
+  0000000140020149: 41 8B 1C 1B        mov         ebx,dword ptr [r11+rbx]
+  000000014002014D: 89 9D C0 01 00 00  mov         dword ptr [rbp+00000000000001C0h],ebx
+  0000000140020153: 49 8D 5A 08        lea         rbx,[r10+8]
+  0000000140020157: 48 89 5F 18        mov         qword ptr [rdi+18h],rbx
+  000000014002015B: 49 39 D9           cmp         r9,rbx
+  000000014002015E: 49 0F 42 D9        cmovb       rbx,r9
+  0000000140020162: 4D 89 CE           mov         r14,r9
+  0000000140020165: 49 29 DE           sub         r14,rbx
+  0000000140020168: 49 83 FE 03        cmp         r14,3
+  000000014002016C: 0F 86 7C 04 00 00  jbe         00000001400205EE
+  0000000140020172: 41 8B 1C 1B        mov         ebx,dword ptr [r11+rbx]
+  0000000140020176: 89 9D C4 01 00 00  mov         dword ptr [rbp+00000000000001C4h],ebx
+  000000014002017C: 49 8D 5A 0C        lea         rbx,[r10+0Ch]
+  0000000140020180: 48 89 5F 18        mov         qword ptr [rdi+18h],rbx
+  0000000140020184: 49 39 D9           cmp         r9,rbx
+  0000000140020187: 49 0F 42 D9        cmovb       rbx,r9
+  000000014002018B: 4D 89 CE           mov         r14,r9
+  000000014002018E: 49 29 DE           sub         r14,rbx
+  0000000140020191: 49 83 FE 03        cmp         r14,3
+  0000000140020195: 0F 86 97 04 00 00  jbe         0000000140020632
+  000000014002019B: 41 8B 1C 1B        mov         ebx,dword ptr [r11+rbx]
+  000000014002019F: 89 9D C8 01 00 00  mov         dword ptr [rbp+00000000000001C8h],ebx
+  00000001400201A5: 49 8D 5A 10        lea         rbx,[r10+10h]
+  00000001400201A9: 48 89 5F 18        mov         qword ptr [rdi+18h],rbx
+  00000001400201AD: 49 39 D9           cmp         r9,rbx
+  00000001400201B0: 49 0F 42 D9        cmovb       rbx,r9
+  00000001400201B4: 4D 89 CE           mov         r14,r9
+  00000001400201B7: 49 29 DE           sub         r14,rbx
+  00000001400201BA: 49 83 FE 03        cmp         r14,3
+  00000001400201BE: 0F 86 90 04 00 00  jbe         0000000140020654
+  00000001400201C4: 4C 89 EE           mov         rsi,r13
+  00000001400201C7: 45 8B 2C 1B        mov         r13d,dword ptr [r11+rbx]
+  00000001400201CB: 49 8D 5A 14        lea         rbx,[r10+14h]
+  00000001400201CF: 48 89 5F 18        mov         qword ptr [rdi+18h],rbx
+  00000001400201D3: 49 39 D9           cmp         r9,rbx
+  00000001400201D6: 49 0F 42 D9        cmovb       rbx,r9
+  00000001400201DA: 4D 89 CE           mov         r14,r9
+  00000001400201DD: 49 29 DE           sub         r14,rbx
+  00000001400201E0: 49 83 FE 03        cmp         r14,3
+  00000001400201E4: 0F 86 3B 05 00 00  jbe         0000000140020725
+  00000001400201EA: 45 8B 0C 1B        mov         r9d,dword ptr [r11+rbx]
+  00000001400201EE: 49 83 C2 18        add         r10,18h
+  00000001400201F2: 4C 89 57 18        mov         qword ptr [rdi+18h],r10
+  00000001400201F6: 4C 89 45 C8        mov         qword ptr [rbp-38h],r8
+  00000001400201FA: 48 89 45 D0        mov         qword ptr [rbp-30h],rax
+  00000001400201FE: 48 89 4D D8        mov         qword ptr [rbp-28h],rcx
+  0000000140020202: 48 8B 85 F8 01 00  mov         rax,qword ptr [rbp+00000000000001F8h]
+  0000000140020209: 48 89 45 E0        mov         qword ptr [rbp-20h],rax
+  000000014002020D: 0F 11 45 E8        movups      xmmword ptr [rbp-18h],xmm0
+  0000000140020211: 48 89 75 F8        mov         qword ptr [rbp-8],rsi
+  0000000140020215: 0F 11 4D 00        movups      xmmword ptr [rbp],xmm1
+  0000000140020219: 48 8B 85 F0 01 00  mov         rax,qword ptr [rbp+00000000000001F0h]
+  0000000140020220: 48 89 45 10        mov         qword ptr [rbp+10h],rax
+  0000000140020224: 0F 11 55 18        movups      xmmword ptr [rbp+18h],xmm2
+  0000000140020228: 48 8B 85 00 02 00  mov         rax,qword ptr [rbp+0000000000000200h]
+  000000014002022F: 48 89 45 28        mov         qword ptr [rbp+28h],rax
+  0000000140020233: 48 8B 85 20 01 00  mov         rax,qword ptr [rbp+0000000000000120h]
+  000000014002023A: 48 8D 4D D0        lea         rcx,[rbp-30h]
+  000000014002023E: 48 89 41 70        mov         qword ptr [rcx+70h],rax
+  0000000140020242: 0F 28 85 10 01 00  movaps      xmm0,xmmword ptr [rbp+0000000000000110h]
+  0000000140020249: 0F 11 41 60        movups      xmmword ptr [rcx+60h],xmm0
+  000000014002024D: 8B 85 BC 01 00 00  mov         eax,dword ptr [rbp+00000000000001BCh]
+  0000000140020253: 89 45 48           mov         dword ptr [rbp+48h],eax
+  0000000140020256: 8B 85 C0 01 00 00  mov         eax,dword ptr [rbp+00000000000001C0h]
+  000000014002025C: 89 45 4C           mov         dword ptr [rbp+4Ch],eax
+  000000014002025F: 8B 85 C4 01 00 00  mov         eax,dword ptr [rbp+00000000000001C4h]
+  0000000140020265: 89 45 50           mov         dword ptr [rbp+50h],eax
+  0000000140020268: 8B 85 C8 01 00 00  mov         eax,dword ptr [rbp+00000000000001C8h]
+  000000014002026E: 89 45 54           mov         dword ptr [rbp+54h],eax
+  0000000140020271: 44 89 AD 98 01 00  mov         dword ptr [rbp+0000000000000198h],r13d
+  0000000140020278: 44 89 6D 58        mov         dword ptr [rbp+58h],r13d
+  000000014002027C: 44 89 8D 9C 01 00  mov         dword ptr [rbp+000000000000019Ch],r9d
+  0000000140020283: 44 89 4D 5C        mov         dword ptr [rbp+5Ch],r9d
+  0000000140020287: 48 C7 45 C0 05 00  mov         qword ptr [rbp-40h],5
+  000000014002028F: 49 89 D6           mov         r14,rdx
+  0000000140020292: 48 8B 5D A8        mov         rbx,qword ptr [rbp-58h]
+  0000000140020296: 4C 8B AD B0 01 00  mov         r13,qword ptr [rbp+00000000000001B0h]
+  000000014002029D: 4C 3B AD A0 01 00  cmp         r13,qword ptr [rbp+00000000000001A0h]
+  00000001400202A4: 0F 85 16 F9 FF FF  jne         000000014001FBC0
+  00000001400202AA: E9 AD 00 00 00     jmp         000000014002035C
+  00000001400202AF: 48 8D 4D 70        lea         rcx,[rbp+70h]
+  00000001400202B3: 48 89 FA           mov         rdx,rdi
+  00000001400202B6: 45 89 E0           mov         r8d,r12d
+  00000001400202B9: E8 12 10 00 00     call        00000001400212D0
+  00000001400202BE: 48 8D 55 78        lea         rdx,[rbp+78h]
+  00000001400202C2: 48 8B 45 70        mov         rax,qword ptr [rbp+70h]
+  00000001400202C6: 0F 10 02           movups      xmm0,xmmword ptr [rdx]
+  00000001400202C9: 0F 10 4A 10        movups      xmm1,xmmword ptr [rdx+10h]
+  00000001400202CD: 0F 29 85 10 01 00  movaps      xmmword ptr [rbp+0000000000000110h],xmm0
+  00000001400202D4: 0F 29 8D 20 01 00  movaps      xmmword ptr [rbp+0000000000000120h],xmm1
+  00000001400202DB: 48 83 F8 02        cmp         rax,2
+  00000001400202DF: 0F 84 A3 01 00 00  je          0000000140020488
+  00000001400202E5: 48 89 B5 E8 01 00  mov         qword ptr [rbp+00000000000001E8h],rsi
+  00000001400202EC: 48 8B 4A 70        mov         rcx,qword ptr [rdx+70h]
+  00000001400202F0: 4C 8D 45 D0        lea         r8,[rbp-30h]
+  00000001400202F4: 49 89 48 70        mov         qword ptr [r8+70h],rcx
+  00000001400202F8: 0F 10 42 60        movups      xmm0,xmmword ptr [rdx+60h]
+  00000001400202FC: 41 0F 11 40 60     movups      xmmword ptr [r8+60h],xmm0
+  0000000140020301: 0F 10 42 20        movups      xmm0,xmmword ptr [rdx+20h]
+  0000000140020305: 0F 10 4A 30        movups      xmm1,xmmword ptr [rdx+30h]
+  0000000140020309: 0F 10 52 40        movups      xmm2,xmmword ptr [rdx+40h]
+  000000014002030D: 0F 10 5A 50        movups      xmm3,xmmword ptr [rdx+50h]
+  0000000140020311: 41 0F 11 58 50     movups      xmmword ptr [r8+50h],xmm3
+  0000000140020316: 41 0F 11 50 40     movups      xmmword ptr [r8+40h],xmm2
+  000000014002031B: 41 0F 11 48 30     movups      xmmword ptr [r8+30h],xmm1
+  0000000140020320: 41 0F 11 40 20     movups      xmmword ptr [r8+20h],xmm0
+  0000000140020325: 0F 28 85 10 01 00  movaps      xmm0,xmmword ptr [rbp+0000000000000110h]
+  000000014002032C: 0F 28 8D 20 01 00  movaps      xmm1,xmmword ptr [rbp+0000000000000120h]
+  0000000140020333: 41 0F 11 48 10     movups      xmmword ptr [r8+10h],xmm1
+  0000000140020338: 41 0F 11 00        movups      xmmword ptr [r8],xmm0
+  000000014002033C: 48 89 45 C8        mov         qword ptr [rbp-38h],rax
+  0000000140020340: 48 C7 45 C0 03 00  mov         qword ptr [rbp-40h],3
+  0000000140020348: 4C 8B AD B0 01 00  mov         r13,qword ptr [rbp+00000000000001B0h]
+  000000014002034F: 4C 3B AD A0 01 00  cmp         r13,qword ptr [rbp+00000000000001A0h]
+  0000000140020356: 0F 85 64 F8 FF FF  jne         000000014001FBC0
+  000000014002035C: 48 8D 8D A0 01 00  lea         rcx,[rbp+00000000000001A0h]
+  0000000140020363: E8 C8 16 0F 00     call        0000000140111A30
+  0000000140020368: E9 53 F8 FF FF     jmp         000000014001FBC0
+  000000014002036D: 4C 39 F3           cmp         rbx,r14
+  0000000140020370: 49 0F 43 DE        cmovae      rbx,r14
+  0000000140020374: 48 01 DA           add         rdx,rbx
+  0000000140020377: BE 01 00 00 00     mov         esi,1
+  000000014002037C: 4C 89 EB           mov         rbx,r13
+  000000014002037F: 48 89 F1           mov         rcx,rsi
+  0000000140020382: 49 89 D8           mov         r8,rbx
+  0000000140020385: E8 E1 0D 0F 00     call        000000014011116B
+  000000014002038A: 48 8B 85 00 02 00  mov         rax,qword ptr [rbp+0000000000000200h]
+  0000000140020391: 49 01 DE           add         r14,rbx
+  0000000140020394: 4C 89 77 18        mov         qword ptr [rdi+18h],r14
+  0000000140020398: 0F 10 85 80 01 00  movups      xmm0,xmmword ptr [rbp+0000000000000180h]
+  000000014002039F: 0F 29 45 30        movaps      xmmword ptr [rbp+30h],xmm0
+  00000001400203A3: 0F 10 85 70 01 00  movups      xmm0,xmmword ptr [rbp+0000000000000170h]
+  00000001400203AA: 0F 29 45 20        movaps      xmmword ptr [rbp+20h],xmm0
+  00000001400203AE: 0F 10 85 60 01 00  movups      xmm0,xmmword ptr [rbp+0000000000000160h]
+  00000001400203B5: 0F 29 45 10        movaps      xmmword ptr [rbp+10h],xmm0
+  00000001400203B9: 0F 10 85 50 01 00  movups      xmm0,xmmword ptr [rbp+0000000000000150h]
+  00000001400203C0: 0F 29 45 00        movaps      xmmword ptr [rbp],xmm0
+  00000001400203C4: 0F 10 85 10 01 00  movups      xmm0,xmmword ptr [rbp+0000000000000110h]
+  00000001400203CB: 0F 10 8D 20 01 00  movups      xmm1,xmmword ptr [rbp+0000000000000120h]
+  00000001400203D2: 0F 10 95 30 01 00  movups      xmm2,xmmword ptr [rbp+0000000000000130h]
+  00000001400203D9: 0F 10 9D 40 01 00  movups      xmm3,xmmword ptr [rbp+0000000000000140h]
+  00000001400203E0: 0F 29 5D F0        movaps      xmmword ptr [rbp-10h],xmm3
+  00000001400203E4: 0F 29 55 E0        movaps      xmmword ptr [rbp-20h],xmm2
+  00000001400203E8: 0F 29 4D D0        movaps      xmmword ptr [rbp-30h],xmm1
+  00000001400203EC: 0F 29 45 C0        movaps      xmmword ptr [rbp-40h],xmm0
+  00000001400203F0: 48 89 5D 40        mov         qword ptr [rbp+40h],rbx
+  00000001400203F4: 48 89 75 48        mov         qword ptr [rbp+48h],rsi
+  00000001400203F8: 48 89 5D 50        mov         qword ptr [rbp+50h],rbx
+  00000001400203FC: 48 89 45 58        mov         qword ptr [rbp+58h],rax
+  0000000140020400: 8B 85 CC 01 00 00  mov         eax,dword ptr [rbp+00000000000001CCh]
+  0000000140020406: 89 45 60           mov         dword ptr [rbp+60h],eax
+  0000000140020409: 48 89 5D B0        mov         qword ptr [rbp-50h],rbx
+  000000014002040D: 48 89 75 B8        mov         qword ptr [rbp-48h],rsi
+  0000000140020411: 4C 8B B5 F8 01 00  mov         r14,qword ptr [rbp+00000000000001F8h]
+  0000000140020418: 4C 8B AD B0 01 00  mov         r13,qword ptr [rbp+00000000000001B0h]
+  000000014002041F: 4C 3B AD A0 01 00  cmp         r13,qword ptr [rbp+00000000000001A0h]
+  0000000140020426: 0F 85 94 F7 FF FF  jne         000000014001FBC0
+  000000014002042C: E9 2B FF FF FF     jmp         000000014002035C
+  0000000140020431: 45 31 E4           xor         r12d,r12d
+  0000000140020434: 4C 89 E1           mov         rcx,r12
+  0000000140020437: 4C 89 EA           mov         rdx,r13
+  000000014002043A: E8 62 AD 0F 00     call        000000014011B1A1
+  000000014002043F: 0F 0B              ud2
+  0000000140020441: 48 8B 85 B0 01 00  mov         rax,qword ptr [rbp+00000000000001B0h]
+  0000000140020448: 48 8B 8D 08 02 00  mov         rcx,qword ptr [rbp+0000000000000208h]
+  000000014002044F: 48 89 41 18        mov         qword ptr [rcx+18h],rax
