@@ -1,12 +1,14 @@
 # FBMOD 静态分析与重建
 
-本仓库整理了对 FBMOD 解包工具的只读静态分析，以及两个 FBMOD 样本的结构核验。Rust 文件是按二进制可观察行为编写的重建稿，不是原工具源码。原始 EXE 和样本没有随仓库发布。
+本仓库整理了对 FBMOD 解包工具的只读静态分析，以及两个 FBMOD 样本的结构核验。Rust 文件是按二进制可观察行为编写的重建稿，不是原工具源码。原始 EXE 和两个 FBMOD 样本放在 [inputs/](inputs/) 中；EXE 只作为数据检查，没有运行。文件大小和 SHA-256 见 [验证记录](VALIDATION.md)。
 
 ## v0.1.0 下载
 
 - [独立 ZIP](https://github.com/Z-MoonZombies/fbmod-static-analysis/releases/download/v0.1.0/fbmod-static-analysis-v0.1.0.zip)
 - [SHA-256 文件](https://github.com/Z-MoonZombies/fbmod-static-analysis/releases/download/v0.1.0/fbmod-static-analysis-v0.1.0.zip.sha256)
 - SHA-256：`a17e31258543e7593b5c91f8846db20c038cee3b4376a1e3f518adbdf6cef582`
+
+原始文件单独保存在仓库的 `inputs/` 目录，不包含在 v0.1.0 独立 ZIP 中。
 
 ## 已核对的内容
 
@@ -21,6 +23,7 @@
 - [静态核验脚本](analyze_static.py)：使用 Python 标准库检查 PE 和 FBMOD 文件。
 - [PE 反汇编脚本](pe_dumpbin_range.ps1)：截取指定 RVA 范围；也可用可选的 Capstone 脚本 `pe_disasm_range.py`。
 - [证据目录](evidence/)：反汇编摘录和样本核验记录。
+- [原始分析文件](inputs/)：反编译器 EXE 和两个 FBMOD 样本，附 SHA-256。
 
 ## 检查与限制
 
@@ -30,18 +33,18 @@ Rust 代码使用 rustc 1.100.0 通过格式检查、`cargo check --offline` 和
 
 ## 复现
 
-检查本地文件：
+使用仓库内的文件检查样本：
 
 ```text
-python analyze_static.py /path/to/fbmod-decompiler.exe "/path/to/Anti Chomper V1.0.0.fbmod"
+python analyze_static.py inputs/fbmod-decompiler.exe "inputs/Anti Chomper V1.0.0.fbmod"
 ```
 
 Windows 上可用 Visual Studio 的 dumpbin 截取 PE 反汇编：
 
 ```powershell
-.\pe_dumpbin_range.ps1 -PePath "C:\path\fbmod-decompiler.exe" -StartRva 0x24080 -EndRva 0x255A5
+.\pe_dumpbin_range.ps1 -PePath "inputs\fbmod-decompiler.exe" -StartRva 0x24080 -EndRva 0x255A5
 ```
 
 ## 使用范围
 
-本仓库公开供查看和 fork，内容仅供阅读。代码和报告没有开源许可证，也未授权复用、修改或再发布。详细许可说明见 [LICENSE_STATUS.md](LICENSE_STATUS.md)。
+本仓库公开供查看和 fork，内容仅供阅读。代码和报告没有开源许可证，也未授权复用、修改或再发布。原始 EXE 和样本的使用范围见 [许可说明](LICENSE_STATUS.md)。
