@@ -76,3 +76,7 @@ GitHub 对公开仓库适用的平台条款允许用户查看和 fork。若“�
 ## 发布状态
 
 当前仓库已发布 v0.1.0 标签与 GitHub Release；后续工作聚焦于已知分析限制。详见 `RELEASE_CHECKLIST.md` 和 `RELEASE_NOTES_v0.1.0-DRAFT.md`。
+
+- [独立源码 ZIP](https://github.com/Z-MoonZombies/fbmod-static-analysis/releases/download/v0.1.0/fbmod-static-analysis-v0.1.0.zip)
+- [SHA-256 校验文件](https://github.com/Z-MoonZombies/fbmod-static-analysis/releases/download/v0.1.0/fbmod-static-analysis-v0.1.0.zip.sha256)
+- SHA-256：`a17e31258543e7593b5c91f8846db20c038cee3b4376a1e3f518adbdf6cef582`
