@@ -44,4 +44,4 @@ Windows 上可用 Visual Studio 的 dumpbin 截取 PE 反汇编：
 
 ## 使用范围
 
-发布者要求内容只供阅读。本仓库没有开源许可证，也没有授予代码和报告的通用复用、修改或再发布许可。仓库公开在 GitHub，可供查看和 fork；原始 EXE 和 FBMOD 文件不在仓库中。详见 [许可说明](LICENSE_STATUS.md)。
+本仓库公开供查看和 fork，内容仅供阅读。代码和报告没有开源许可证，也未授权复用、修改或再发布。详细许可说明见 [LICENSE_STATUS.md](LICENSE_STATUS.md)。
